@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+    <title>Tag Tube</title>
+	<style type="text/css">
+h2{
+	text-align:center
+  }
+
+form {
+	text-align:center
+}
+
+.back {
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.73);
+    padding: 0.3em 0.5em;
+    background: #FA8072;
+    border-top: solid 3px #DC143C;
+    border-bottom: solid 3px #DC143C;
+    transition: .4s;
+}
+
+
+.back:hover {
+   text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+}
+
+</style>
+</head>
+<body>
+   <h1>{{title}}</h1>
+   <h2>タグ一覧</h2>
+   <h4>{{movie_tag}}</h4>
+<form method="get" action="/tag_tube" >
+	<input class="back" type="submit" value="戻る">
+</form>
+</html>
