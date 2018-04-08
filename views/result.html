@@ -4,9 +4,26 @@
 	<meta charset="UTF-8"/>
     <title>Tag Tube</title>
 	<style type="text/css">
-h2{
-	text-align:center
+  h1 {
+    border-bottom: 3px solid #9900FF;
   }
+
+  .box {
+    padding: 0.5em 1em;
+    margin: auto;
+    color: #ff7d6e;
+    background: #ffebe9;
+    border-top: solid 10px #ff7d6e;
+    width:30%;
+
+
+}
+.box h2 {
+    color:#000;
+    margin: 0; 
+    padding: 0;
+    text-align:center
+}
 
 form {
 	text-align:center
@@ -37,7 +54,7 @@ form {
 </head>
 <body>
    <h1>{{title}}</h1>
-   <h2>タグ一覧</h2>
+   <div class="box"><h2>タグ一覧</h2></div>
    <h4>{{movie_tag}}</h4>
 <form method="get" action="/tag_tube" >
 	<input class="back" type="submit" value="戻る">
