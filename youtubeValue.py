@@ -13,7 +13,7 @@ class youtubeValue():
     def __init__(self,url):
         self.url = url
 
-    def get_movie_tag(self):
+    def scrape_movie_tag(self):
         get_tag = ""
         soup = get_HTML(self.url)
         meta = soup.find_all("meta")
@@ -27,7 +27,7 @@ class youtubeValue():
                 pass
         return get_tag
 
-    def get_movie_title(self):
+    def scrape_movie_title(self):
         soup = get_HTML(self.url)
         title = soup.find("title").string
         get_title= title.rstrip(" - YouTube")

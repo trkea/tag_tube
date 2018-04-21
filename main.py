@@ -27,8 +27,8 @@ def result():
         return  template("result",title=title,movie_tag=movie_tag)
 
     youtube = youtubeValue.youtubeValue(url)
-    movie_tag = youtube.get_movie_tag()
-    title = youtube.get_movie_title()
+    movie_tag = youtube.scrape_movie_tag()
+    title = youtube.scrape_movie_title()
 
     if title == None and movie_tag == "":
         title = u"この動画は存在しません"
