@@ -3,15 +3,16 @@
 import urllib2
 from bs4 import BeautifulSoup
 
-def get_HTML(url):
-    html = urllib2.urlopen(url)
-    soup = BeautifulSoup(html, "html.parser")
-    return soup
-
 class youtubeValue():
 
     def __init__(self,url):
         self.url = url
+
+
+    def get_HTML():
+        html = urllib2.urlopen(self.url)
+        soup = BeautifulSoup(html, "html.parser")
+        return soup
 
     def scrape_movie_tag(self):
         get_tag = ""
