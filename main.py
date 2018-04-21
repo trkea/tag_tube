@@ -39,4 +39,3 @@ def result():
     return  template("result",title=title,movie_tag=movie_tag)
 
 run(host='localhost', port=8081, debug=True)
-
