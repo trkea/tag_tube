@@ -11,18 +11,13 @@
   .box {
     padding: 0.5em 1em;
     margin: auto;
-    color: #ff7d6e;
+    color: #000;
     background: #ffebe9;
     border-top: solid 10px #ff7d6e;
-    width:30%;
-
-
 }
-.box h2 {
-    color:#000;
-    margin: 0; 
-    padding: 0;
-    text-align:center
+
+.result {
+  text-align:center;
 }
 
 form {
@@ -54,8 +49,10 @@ form {
 </head>
 <body>
    <h1>{{title}}</h1>
-   <div class="box"><h2>タグ一覧</h2></div>
-   <h4>{{movie_tag}}</h4>
+   <div class="result">
+    <h2>タグ一覧</h2>
+   <h4 class="box">{{movie_tag}}</h4>
+   </div>
 <form method="get" action="/tag_tube" >
 	<input class="back" type="submit" value="戻る">
 </form>
